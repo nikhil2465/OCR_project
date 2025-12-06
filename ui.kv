@@ -1,0 +1,35 @@
+Screen:
+    MDBoxLayout:
+        orientation: "vertical"
+        padding: 20
+        spacing: 20
+
+        MDLabel:
+            text: "Blind OCR Reader"
+            font_style: "H5"
+            halign: "center"
+
+        MDRaisedButton:
+            text: "Read Image"
+            on_release: app.read_image()
+
+        MDRaisedButton:
+            text: "Read PDF"
+            on_release: app.read_pdf()
+
+        MDRaisedButton:
+            text: "Save Audio"
+            on_release: app.export_audio()
+
+        MDRaisedButton:
+            text: "Save as PDF"
+            on_release: app.export_pdf()
+
+        MDRaisedButton:
+            text: "Save as DOCX"
+            on_release: app.export_docx()
+
+        MDRaisedButton:
+            text: "Test Audio Export"
+            on_release: app.test_audio()
+
